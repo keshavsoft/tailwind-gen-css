@@ -1,0 +1,135 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeshavSoft</title>
+
+    <!-- Tailwind CDN -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="./tailwindcss-3.4.17.css"></script>
+    <!-- Heroicons (SVG inline, no extra CDN needed) -->
+
+
+    <style>
+        tfoot tr {
+            background-color: #fff8dc;
+        }
+
+        tfoot tr:has(input:focus) {
+            background-color: #ffe082;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #2563eb;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.3);
+        }
+
+        mark {
+            background-color: yellow;
+            color: black;
+        }
+
+        .active svg {
+            stroke: #3b82f6;
+            /* Example color */
+        }
+
+        .active span {
+            color: #3b82f6;
+            /* Example color */
+        }
+
+        .danger svg {
+            stroke: #c41d14;
+            /* Example color */
+        }
+
+        .danger span {
+            color: #c41d14;
+            /* Example color */
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.right-2{right:0.5rem}.top-2{top:0.5rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-3{margin-left:0.75rem}.mt-4{margin-top:1rem}.flex{display:flex}.table{display:table}.hidden{display:none}.size-6{width:1.5rem;height:1.5rem}.h-4{height:1rem}.h-9{height:2.25rem}.min-h-screen{min-height:100vh}.w-full{width:100%}.w-4{width:1rem}.w-\[1000px\]{width:1000px}.max-w-3xl{max-width:48rem}.max-w-6xl{max-width:72rem}.max-w-md{max-width:28rem}.flex-grow{flex-grow:1}.table-fixed{table-layout:fixed}.cursor-pointer{cursor:pointer}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-3{gap:0.75rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.overflow-x-auto{overflow-x:auto}.rounded-md{border-radius:0.375rem}.rounded-b-lg{border-bottom-right-radius:0.5rem;border-bottom-left-radius:0.5rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity, 1))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pb-2{padding-bottom:0.5rem}.pl-3{padding-left:0.75rem}.pr-9{padding-right:2.25rem}.pt-2{padding-top:0.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-base{font-size:1rem;line-height:1.5rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.font-semibold{font-weight:600}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-150{transition-duration:150ms}.odd\:bg-gray-100:nth-child(odd){--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-600:hover{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-100:hover{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:bg-gray-500:active{--tw-bg-opacity:1;background-color:rgb(107 114 128 / var(--tw-bg-opacity, 1))}@media (min-width: 768px){.md\:ml-0{margin-left:0px}.md\:mt-0{margin-top:0px}.md\:flex{display:flex}.md\:hidden{display:none}.md\:w-auto{width:auto}.md\:flex-row{flex-direction:row}.md\:flex-col{flex-direction:column}.md\:flex-wrap{flex-wrap:wrap}.md\:items-center{align-items:center}.md\:justify-center{justify-content:center}.md\:gap-4{gap:1rem}.md\:space-y-0 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0px * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0px * var(--tw-space-y-reverse))}.md\:text-center{text-align:center}}@media (min-width: 1024px){.lg\:max-w-5xl{max-width:64rem}.lg\:bg-transparent{background-color:transparent}.lg\:px-2{padding-left:0.5rem;padding-right:0.5rem}.lg\:py-1{padding-top:0.25rem;padding-bottom:0.25rem}.lg\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width: 1280px){.xl\:max-w-6xl{max-width:72rem}.xl\:max-w-full{max-width:100%}.xl\:px-10{padding-left:2.5rem;padding-right:2.5rem}}.\[\&_svg\]\:size-6 svg{width:1.5rem;height:1.5rem}</style></head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <main class="flex-grow">
+
+        <div id="header"><nav class="bg-gray-800 text-white"><div class="mx-auto px-3 py-3
+    max-w-3xl
+    lg:max-w-5xl
+    xl:max-w-full xl:px-10"><div class="flex flex-wrap items-center justify-between"><div class="text-xl font-semibold" id="htmlId">Bills</div><button class="text-xl px-4 py-1 md:hidden">☰</button><ul id="menu" class="w-full hidden flex flex-col space-y-2 mt-4
+    md:flex md:flex-row md:space-y-0 md:gap-4
+    md:mt-0 md:w-auto md:flex-wrap [&amp;_svg]:size-6"><li class="md:text-center"><a id="CreateHtmlId" href="#" class=" flex justify-between items-center
+        bg-gray-700 px-4 py-2 rounded-md
+        hover:bg-gray-600
+        active:bg-gray-500 active:scale-95
+        transition-all duration-150
+        md:flex-col md:justify-center md:items-center
+        lg:bg-transparent lg:px-2 lg:py-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 10.5v6m3-3H9m4.06-7.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"></path>
+</svg><span class="ml-3 text-right w-full text-base
+        md:w-auto md:text-center md:ml-0 lg:text-lg">Create</span></a></li><li class="md:text-center"><a id="AddItemHtmlId" href="#" class="undefined flex justify-between items-center
+        bg-gray-700 px-4 py-2 rounded-md
+        hover:bg-gray-600
+        active:bg-gray-500 active:scale-95
+        transition-all duration-150
+        md:flex-col md:justify-center md:items-center
+        lg:bg-transparent lg:px-2 lg:py-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+</svg><span class="ml-3 text-right w-full text-base
+        md:w-auto md:text-center md:ml-0 lg:text-lg">AddItem</span></a></li><li class="md:text-center"><a id="ShowAllHtmlId" href="#" class="undefined flex justify-between items-center bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600 active:bg-gray-500 active:scale-95 transition-all duration-150 md:flex-col md:justify-center md:items-center lg:bg-transparent lg:px-2 lg:py-1 active"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"></path>
+</svg><span class="ml-3 text-right w-full text-base
+        md:w-auto md:text-center md:ml-0 lg:text-lg">ShowAll</span></a></li><li class="md:text-center"><a id="toTallyId" href="#" class="undefined flex justify-between items-center
+        bg-gray-700 px-4 py-2 rounded-md
+        hover:bg-gray-600
+        active:bg-gray-500 active:scale-95
+        transition-all duration-150
+        md:flex-col md:justify-center md:items-center
+        lg:bg-transparent lg:px-2 lg:py-1" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25"></path>
+</svg><span class="ml-3 text-right w-full text-base
+        md:w-auto md:text-center md:ml-0 lg:text-lg">ToTally</span></a></li><li class="md:text-center"><a id="tallyUpId" href="#" class="undefined flex justify-between items-center
+        bg-gray-700 px-4 py-2 rounded-md
+        hover:bg-gray-600
+        active:bg-gray-500 active:scale-95
+        transition-all duration-150
+        md:flex-col md:justify-center md:items-center
+        lg:bg-transparent lg:px-2 lg:py-1" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z"></path>
+</svg><span class="ml-3 text-right w-full text-base
+        md:w-auto md:text-center md:ml-0 lg:text-lg">TallyUp</span></a></li><li class="md:text-center"><a id="tallyDownId" href="#" class="undefined flex justify-between items-center bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600 active:bg-gray-500 active:scale-95 transition-all duration-150 md:flex-col md:justify-center md:items-center lg:bg-transparent lg:px-2 lg:py-1 danger"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"></path>
+</svg><span class="ml-3 text-right w-full text-base
+        md:w-auto md:text-center md:ml-0 lg:text-lg">TallyDown</span></a></li></ul></div></div></nav></div>
+
+        <section class="mx-auto px-3 py-6 
+                max-w-3xl 
+                lg:max-w-5xl 
+                xl:max-w-6xl">
+
+            <div id="kSTableContainer" class="max-w-6xl mx-auto p-2"><div class="firstRowClass flex items-center justify-between px-6 pt-2 pb-2"><div class="flex items-center gap-3"><h5 class="tableNameClass text-lg font-semibold text-gray-900" data-table-name=""></h5></div><div class="relative w-full max-w-md"><input type="text" placeholder="search..." class="tableSearchClass ks-search-allColumns w-full h-9 pl-3 pr-9 text-sm border border-gray-300 rounded-md outline-none"><svg class="absolute right-2 top-2 w-4 h-4 text-gray-400 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 21l-5.2-5.2M15 10a5 5 0 11-10 0 5 5 0 0110 0z"></path></svg></div></div><div class="rounded-b-lg shadow-md overflow-x-auto tableParent"><table class="table bg-white table-fixed w-[1000px]"><thead class="theadClass"><tr><th class="px-4 py-2 border" style="width: 25px;">#</th><th class="px-6 py-3 text-left border-b border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors cursor-pointer" style="width: 150px; max-width: 150px;" data-key="LedgerName" data-field="LedgerName">LedgerName</th><th class="px-6 py-3 text-left border-b border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors cursor-pointer" style="width: 100px; max-width: 100px;" data-key="pk" data-field="pk">Invoice No.</th><th class="px-6 py-3 text-left border-b border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors cursor-pointer" style="width: 100px; max-width: 100px;" data-key="GstRegistrationType" data-field="GstRegistrationType">Registration Type</th><th class="px-6 py-3 text-left border-b border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors cursor-pointer" style="width: 100px; max-width: 100px;" data-key="PartyGSTIN" data-field="PartyGSTIN">GSTIN</th><th class="px-6 py-3 text-left border-b border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors cursor-pointer" style="width: 100px; max-width: 100px;" data-key="InvoiceDate" data-field="InvoiceDate">InvoiceDate</th><th class="px-6 py-3 text-left border-b border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors cursor-pointer" style="width: 100px; max-width: 100px;" data-key="insertedToTally" data-field="insertedToTally">insertedToTally</th></tr></thead><tbody class="tbodyClass"><tr class="border-t hover:bg-blue-100 odd:bg-gray-100" data-pk="1" data-search-text="1nani fishnets1regular37bevps3045f1z12026-06-06true"><td class="px-4 py-2 border text-right" style="width: 50px;" data-original-html="1">1</td><td class="px-4 py-2 border" style="width: 150px;" data-original-html="Nani Fishnets">Nani Fishnets</td><td class="px-4 py-2 border" style="width: 100px;" data-original-html="1">1</td><td class="px-4 py-2 border" style="width: 100px;" data-original-html="Regular">Regular</td><td class="px-4 py-2 border" style="width: 100px;" data-original-html="37BEVPS3045F1Z1">37BEVPS3045F1Z1</td><td class="px-4 py-2 border" style="width: 100px;" data-original-html="2026-06-06">2026-06-06</td><td class="px-4 py-2 border" style="width: 100px;" data-original-html="true">true</td></tr><tr class="border-t hover:bg-blue-100 odd:bg-gray-100" data-pk="2" data-search-text="23f industries limited2regular37aaacf2643k1zm2026-06-06"><td class="px-4 py-2 border text-right" style="width: 50px;" data-original-html="2">2</td><td class="px-4 py-2 border" style="width: 150px;" data-original-html="3F Industries Limited">3F Industries Limited</td><td class="px-4 py-2 border" style="width: 100px;" data-original-html="2">2</td><td class="px-4 py-2 border" style="width: 100px;" data-original-html="Regular">Regular</td><td class="px-4 py-2 border" style="width: 100px;" data-original-html="37AAACF2643K1ZM">37AAACF2643K1ZM</td><td class="px-4 py-2 border" style="width: 100px;" data-original-html="2026-06-06">2026-06-06</td><td class="px-4 py-2 border" style="width: 100px;" data-original-html=""></td></tr></tbody><tfoot class="tfootClass"></tfoot></table></div><div class="dataListContainerClass"></div></div>
+
+
+            <div id="kSSubTableContainer">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-200 text-gray-700 text-center py-4">
+        <div class="max-w-6xl mx-auto px-4">
+            © 2026 KeshavSoft • Contact
+        </div>
+    </footer>
+    <script src="https://keshavsoft.github.io/tailwind-header-dom/Public/v4.2/ksheader.js" type="module"></script>
+
+    <!-- <script src="https://keshavsoft.github.io/tailwind-table-dom/Public/v12/kstable.js" type="module"></script> -->
+
+    <!-- <script src="./script.js" type="module"></script> -->
+
+    <script type="module" src="./Index/start.js"></script>
+
+
+</body></html>
