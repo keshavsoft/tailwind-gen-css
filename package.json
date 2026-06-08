@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tail": "tailwindcss -i ./input.css -o ./tailwind-3.css",
-    "tail-watch": "tailwindcss -i ./input.css -o ./tailwind-3.css --watch"
+    "tail-watch": "tailwindcss -i ./input.css -o ./tailwind-3.css --watch",
+    "tail-min": "tailwindcss -i ./input.css -o ./tailwind-3-min.css --minify"
   },
   "keywords": [],
   "author": "",
