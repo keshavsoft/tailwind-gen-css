@@ -1,7 +1,8 @@
 // tailwind.config.js
 module.exports = {
     content: [
-        "./v1/bill.html"
+        "./v2/bill.html",
+        "./v2/header.html"
     ],
     content1: [
         "./index.html"
